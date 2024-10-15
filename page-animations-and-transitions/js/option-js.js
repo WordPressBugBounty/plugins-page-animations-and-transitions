@@ -101,13 +101,30 @@ jQuery(document).ready(function () {
     return false;
   });
 });
-jQuery('document').ready(function(){
-  jQuery('#preloaer_anim_btn').click(function(){
-    var element_preloader_data = jQuery('#preloader_element_hidden_loader').val();
-    navigator.clipboard.writeText(element_preloader_data);
-    var x = document.getElementById("snackbar");
-      x.className = "show";
-      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+jQuery(document).ready(function () {
+  jQuery("#preloaer_anim_btn").click(function () {
+    var element_preloader_data = jQuery(
+      "#preloader_element_hidden_loader"
+    ).val();
+    var $temp = jQuery("<textarea>");
+    jQuery("body").append($temp);
+    $temp.val(element_preloader_data).select();
+    try {
+      var successful = document.execCommand("copy");
+      if (successful) {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      } else {
+        console.error("Copy failed");
+      }
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+    }
+
+    $temp.remove();
   });
 
   // select preloder js
@@ -117,5 +134,3 @@ jQuery('document').ready(function(){
   //   console.log(selected_opt)
   // })
 });
-
-
