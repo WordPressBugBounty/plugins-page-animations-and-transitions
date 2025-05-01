@@ -801,9 +801,6 @@ dd {
   top: 0;
 }
 
-.enigma_home_portfolio_showcase:hover img {
-}
-
 .enigma_home_portfolio_showcase:hover
   .enigma_home_portfolio_showcase_overlay_inner {
   visibility: visible;
