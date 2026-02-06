@@ -1,12 +1,13 @@
 <?php
-/* Plugin Name: Page Animations And Transitions...
+/* 
+Plugin Name: Page Animations And Transitions
 Description: Page Animations And Transition is provide multiple Animation effect to your WordPress site. Show your page with stylish transition.
-Version: 2.4.5
+Version: 2.4.6
 Author: weblizar
 Author URI: https://weblizar.com/plugins/
 Plugin URI: https://wordpress.org/plugins/page-animations-and-transitions/
-* Text Domain: weblizar-page-anim-trans
-* Domain Path: /languages
+Text Domain: weblizar-page-anim-trans
+Domain Path: /languages
 */
 
 // Translate all text & labels of plugin
