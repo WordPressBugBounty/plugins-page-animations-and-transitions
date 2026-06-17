@@ -3,8 +3,8 @@ Contributors: weblizar
 Creator website link: https://weblizar.com/
 Tags: page animation, page transition, page loading effect, animation plugin, animation
 Requires at least: 7.4
-Tested up to: 6.9.1
-Stable tag: 2.4.7
+Tested up to: 7.0
+Stable tag: 2.4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,10 @@ This section describes how to install the plugin and get it working.
 2. Preloader preview
 
 == Changelog ==
+= Version 2.4.8 [17-06-2026]
+  - Tested with Wordpress 7.0
+  - Tested with PHP 8.5.6
+
 = Version 2.4.7 [23-02-2026]
   - Tested with Wordpress 6.9.1
   - Tested with PHP 8.5.1
